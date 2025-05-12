@@ -26,8 +26,7 @@ Developed by :V.B.Laksha
 
 Register Number : 212224220051
 
-## C Program to create new process using Linux API system calls fork() and getpid() , getppid() and to print process ID and parent Process ID using Linux API system calls
-
+## C Program to print process ID and parent Process ID using Linux API system calls
 ~~~
 #include <stdio.h>
 #include <sys/types.h>
@@ -49,29 +48,12 @@ int main(void)
 	return 0; }
 ~~~
 
+## OUTPUT
+![323363651-277a5ef9-b0c2-4e5b-ad59-4a415db2c31c](https://github.com/user-attachments/assets/6dffb9f6-4fb8-4202-ac89-89b35803df0f)
 
 
 
-
-
-
-
-
-
-
-
-
-##OUTPUT
-
-
-![image](https://github.com/user-attachments/assets/36397ac1-b537-4996-873b-a27304619fa1)
-
-
-
-
-
-
-## C Program to execute Linux system commands using Linux API system calls exec() , exit() , wait() family
+## C Program to create new process using Linux API system calls fork() and exit()
 ~~~
 #include <stdio.h>
 #include<stdlib.h>
@@ -89,50 +71,35 @@ exit(0);}
 }
 ~~~
 
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
+## OUTPUT
+![323363997-88cf0f5e-c8fc-4341-b71a-c87c6979fdf1](https://github.com/user-attachments/assets/4fa7b882-4a81-4933-9f31-0d57535d10eb)
 
 
+## C Program to execute Linux system commands using Linux API system calls exec() family
+~~~
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+	printf("Running ps with execlp\n");
+	execlp("ps", "ps", "ax", NULL);
+	printf("Done.\n");
+	exit(0);
+}
+~~~
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##OUTPUT
-
-
-
-
-![image](https://github.com/user-attachments/assets/c7b8f1b7-282f-4429-8f6a-ddefa555398f)
-
-
-
-
-
-
-
-
-
-
-
-
+## OUTPUT
+![323364224-1842c773-69d6-4a4d-9e90-fd5f92813952](https://github.com/user-attachments/assets/66153550-2e6b-42cd-b96b-b7579d2c43c2)
 
 
 # RESULT:
 The programs are executed successfully.
+
